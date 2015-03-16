@@ -55,9 +55,15 @@ div {
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
+    display: block;
 }
 .top-navigation > .content {
     width: 970px;
     height: 70px;
     margin: 0 auto;
+}
+.top-navigation .links > .active {
+	float: right;
+    color: #4c5058;
+    font-weight: 600;
 }
