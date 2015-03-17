@@ -32,9 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: 'Roboto', sans-serif; 
-font-size: 16px; 
-color: #838994; 
-letter-spacing: 0.03em;
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
 }
 ol, ul {
 	list-style: none;
@@ -57,11 +57,15 @@ body {
 div {
 	border: 1px solid #Chocolate;
 }
+.content {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
     position: fixed;
-    /* display: block; */
     width: 100%;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
@@ -73,21 +77,36 @@ div {
     padding: 0 15px;
 }
 .top-navigation .links {
-	margin-top: 1.7rem;
-}
-.top-navigation .logo {
 	margin-top: 15px;
 }
-.top-navigation .links > .active {
+.top-navigation .logo {
+	height: 70px;
+}
+.top-navigation .links {
 	float: right;
+	font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links > .active {
     color: #4c5058;
     font-weight: 600;
 }
 .top-navigation .links li {
     display: inline-block;
-    margin-left: 1.563rem;
+    margin-left: 25px;
 }
 .top-navigation .links li:hover {
     cursor: pointer;
     color: #333333;
+}
+.introduction {
+  background-image: url('../images/first-background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
 }
