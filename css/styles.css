@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,6 +31,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Roboto', sans-serif; 
+font-size: 16px; 
+color: #838994; 
+letter-spacing: 0.03em;
 }
 ol, ul {
 	list-style: none;
@@ -55,15 +60,34 @@ div {
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
-    display: block;
+    position: fixed;
+    /* display: block; */
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
 }
 .top-navigation > .content {
-    width: 970px;
+    width: 750px;
     height: 70px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+.top-navigation .links {
+	margin-top: 1.7rem;
+}
+.top-navigation .logo {
+	margin-top: 15px;
 }
 .top-navigation .links > .active {
 	float: right;
     color: #4c5058;
     font-weight: 600;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
