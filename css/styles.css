@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+  background-color: #LightGray;
 	line-height: 1;
 	font-family: 'Roboto', sans-serif; 
 	font-size: 16px; 
@@ -51,15 +52,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body {
-	background-color: #LightGray;
-}
 div {
 	border: 1px solid #Chocolate;
 }
 .content {
     padding: 0 15px;
     margin: 0 auto;
+    width: 970px;
+    box-sizing: border-box;
 }
 
 /* Navigation Section */
@@ -71,10 +71,8 @@ div {
     z-index: 9999;
 }
 .top-navigation > .content {
-    width: 750px;
+    width: 950px;
     height: 70px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 .top-navigation .links {
 	margin-top: 15px;
@@ -109,4 +107,35 @@ div {
   background-size: cover;
   height: 45.938rem;
   overflow: auto;
+}
+.introduction h1 {
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+  color: white;
+  text-align: center;
+}
+.introduction h3 {
+  margin-top: 1.25rem;
+  front-size: 1.563rem;
+  color: white;
+  text-align: center;
+}
+.introduction .buttons {
+  color: white;
+  text-align: center;
+  margin-top: 1.563rem;
+}
+.big-button {
+    text-shadow: none;
+    border-style: none;
+    line-height: 1.33;
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
 }
